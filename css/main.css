@@ -1,0 +1,193 @@
+body{
+    margin:0;
+    padding:0;
+    font-size: 13px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+/*Header de navegación*/
+header{
+  /*with-ancho height-alto*/
+    width: 100%;
+    height: 60px;
+}
+
+header nav { 
+    display:flex;
+    /* justificar hacia la derecha*/
+    justify-content: flex-end;
+    
+}
+
+header nav .nav-right-section{
+    width: 250px;
+    height: auto;
+    display: flex;
+   /*eliminar puntitos*/ 
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    cursor:pointer
+}
+
+nav .nav-right-section a{
+    margin-right: 25px;
+    color:rgb(36, 36, 36)
+}
+/*Icon Menu*/
+
+nav .nav-right-section .menu{
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+}
+/*Imagen estilo*/
+nav .nav-right-section img{
+    border-radius: 60px;
+    margin-left: 20px;
+    width: 35px;
+    height: 35px;
+}
+/*main*/
+main{
+    margin-top: 50px;
+    text-align: center;
+}
+/*Sección de logo*/
+main .main-logo{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+/*Logo google*/
+main .main-logo img{
+    width: 310px;
+    height: 110px;
+}
+
+/*Sección input*/
+main .main-input{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+main .main-input-container{
+    width: 525px;
+    border-radius: 100px;
+    border: 1px solid rgb(255, 240, 217);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-input input{
+    border: none;
+    width: 550px;
+    height: 40px;
+    outline: none;
+}
+
+main .main-input-container:hover{
+    box-shadow: 0 1px 6px 1px #20212447;
+    border-color: #dfe1e500;
+}
+
+main .main-input .serch-icon{
+    background-image: url("https://img.icons8.com/android/24/000000/search.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 14px;
+    height: 14px;
+    padding-left: 6%;
+}
+main .main-input .micro-icon{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png");
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+    padding-left: 1%;
+}
+main .main-input .cam-icon{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Google_Lens_-_new_logo.png/640px-Google_Lens_-_new_logo.png");
+    height: 30px;
+    width: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding-left: 7%;
+}
+
+    main .main-buttons{
+        width: 550px;
+        margin: 0 auto;
+    }
+
+    main .main-buttons div{
+        display: inline-block;
+    }
+
+    main .main-buttons button{
+        border: 0;
+        height:36px;
+        background-color: #f8f9fa;
+        font-size: 14px;
+        color: #3c4043;
+        border-radius: 4px;
+        padding: 0 15px;
+        margin-right: 15px;
+        border: 1px solid #f8f9fa;
+    }
+
+    main .main-buttons button:hover{
+        box-shadow: 1px 1px rgba(0,0,0,.1);
+        border: 1px solid #dadce0;
+        color: #20212447;
+    }
+
+    /*********************************************************/
+    /*Footer*/
+    
+    footer{
+        background-color: #f2f2f2;
+        width: 100%;
+        height: 50px;
+        position: absolute;
+        font-size: 13px;
+        border-top: 1px solid #e4e4e4;
+        /*Footer dividido en dos comlumnas*/
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        /*Posisicona al footer al final*/
+        bottom:0%;
+
+    }
+
+    footer ul{
+        margin: 10px;
+        list-style: none;
+        display: flex;
+        padding-left: 0px;
+    }
+
+    footer .footer-left{
+        justify-self: left;
+    }
+
+    footer .footer-right{
+        justify-self: right;
+    }
+
+    footer ul li a{
+        color: #70757a;
+        margin: 10px;
+    }
